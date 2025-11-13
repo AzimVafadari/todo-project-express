@@ -1,0 +1,12 @@
+{
+  "name": "To-d",
+  "version": "1.0.0",
+  "description": "A basic Express.js To-Do app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

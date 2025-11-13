@@ -1,0 +1,115 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f4f4f8;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.todo-container {
+  background: #fff;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+}
+
+h1 {
+  color: #222;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+#newTodoInput {
+  flex-grow: 1;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#newTodoInput:focus {
+  border-color: #007bff;
+}
+
+#addTodoBtn {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#addTodoBtn:hover {
+  background-color: #0056b3;
+}
+
+#todoList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#todoList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 15px;
+  background: #fdfdfd;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  word-break: break-word;
+  transition: background-color 0.2s;
+}
+
+#todoList li:last-child {
+  margin-bottom: 0;
+}
+
+#todoList li.done {
+  background-color: #f0f0f0;
+  color: #888;
+  text-decoration: line-through;
+}
+
+.todo-text {
+  flex-grow: 1;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ff3b30;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 5px;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+#todoList li:hover .delete-btn {
+  opacity: 1;
+}
